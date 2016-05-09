@@ -1,12 +1,14 @@
 /*
-Theme Name:         Cornerstone
-Theme URI:          http://cornerstone.yanickvanbarneveld.com/
-Github Theme URI:   https://github.com/yanickvanbarneveld/Cornerstone/
-Description:        Hi. I am a starter theme called Cornerstone. Try turning me into the next, most awesome, WordPress theme out there. That is what I am here for!
-Version:            0.2.6
-Author:             Yanick van Barneveld
-Author URI:         http://yanickvanbarneveld.com/
+Theme Name:			Cornerstone
+Theme URI:			http://cornerstone.yanickvanbarneveld.com/
+Github Theme URI:	https://github.com/yanickvanbarneveld/Cornerstone/
+Description:		Hi. I am a starter theme called Cornerstone. Try turning me into the next, most awesome, WordPress theme out there. That is what I am here for!
+Version:			0.2.6
+Author:				Yanick van Barneveld
+Author URI:			http://yanickvanbarneveld.com/
 
-License:            MIT License
-License URI:        http://www.opensource.org/licenses/mit-license.php
+License:			MIT License
+License URI:		http://www.opensource.org/licenses/mit-license.php
 */
+
+@import "assets/css/cornerstone.css";

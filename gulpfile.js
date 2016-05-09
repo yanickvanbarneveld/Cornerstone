@@ -5,7 +5,7 @@ var minifyCss = require('gulp-minify-css');
 gulp.task('default', ['sass']);
 
 gulp.task('sass', function () {
-  	return gulp.src('./assets/scss/cornerstone.scss')
+	return gulp.src('./assets/scss/cornerstone.scss')
 		.pipe(sass().on('error', sass.logError))
 		.pipe(minifyCss())
 		.pipe(gulp.dest('./assets/css'));
