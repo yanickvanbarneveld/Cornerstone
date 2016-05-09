@@ -20,7 +20,7 @@ function remove_image_link() {
  *
  * @return null
  */
-function remove_file_version() {
+function remove_file_version($src) {
 	if(strpos($src, '?ver=')) {
         $src = remove_query_arg('ver', $src);
     }
@@ -29,8 +29,8 @@ function remove_file_version() {
 }
 
 /**
- * This function adds the Stylesheet script to the wp_head() function which
- * is located in the WordPress Header file and some other required scripts.
+ * This function adds the main style and some other required scripts to
+ * the wp_head() function which is located in the WordPress Header file.
  *
  * @return null
  */
@@ -38,4 +38,8 @@ function add_scripts() {
 	wp_enqueue_style('cs_style', get_stylesheet_uri());
 
 	wp_enqueue_script('jquery');
+}
+
+function add_admin_scripts() {
+	wp_enqueue_style('cs_style', get_template_directory_uri() . '/assets/css/backend.css');
 }

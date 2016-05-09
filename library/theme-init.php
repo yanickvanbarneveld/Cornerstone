@@ -25,6 +25,7 @@ function setup() {
 
 	// Yeah, we also load our own stylesheet, ofcourse and some of our scripts!
 	add_action('wp_enqueue_scripts', 'add_scripts');
+	add_action('admin_enqueue_scripts', 'add_admin_scripts');
 
 	// Oh, in the backend there is still some ugly stuff we need to clean up...
 	add_action('admin_init', 'remove_image_link', 10);

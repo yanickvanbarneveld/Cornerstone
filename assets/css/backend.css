@@ -1,0 +1,7 @@
+.live-editor {
+	display: none !important;
+}
+
+.first-load:after {
+	display: none !important;
+}

@@ -1,4 +1,17 @@
 <?php if (!defined('ABSPATH')) die('Forbidden');
 
-// Here we will load the theme customizations such as Shortcodes for KingComposer
-// and the configuration things for your theme.
+/**
+ * This function loads all the required Shortcodes and the required maps
+ * for using the KingComposer Page Builder plugin.
+ * 
+ * @return null
+ */
+function kingcomposer() {
+	$dir = get_template_directory() . '/library/cornerstone/kingcomposer/shortcodes/*';
+	foreach(glob($dir) as $file)
+	{
+		require_once $file;
+	}
+}
+
+add_action('init', 'kingcomposer', 100);
